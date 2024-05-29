@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма реєстрації</title>
+    <style>
+        .header, .footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 10vh;
+            line-height: 10vh;
+        }
+        .content {
+            margin: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select {
+            padding: 5px;
+            font-size: 16px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="table.html">Таблиця</a>
+            <a href="float.html">Плаваючі блоки</a>
+            <a href="inline.html">Inline-блоки</a>
+            <a href="candle.html">Малюнок</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Форма реєстрації</h1>
+        <form action="#" method="post">
+            <label for="user_name">Прізвище, ім'я, по батькові</label>
+            <input type="text" id="user_name" name="user_name" required>
+
+            <label for="user_email">E-mail</label>
+            <input type="email" id="user_email" name="user_email">
+
+            <label for="user_birthdate">Дата народження</label>
+            <input type="date" id="user_birthdate" name="user_birthdate" required>
+
+            <label for="user_sex">Стать</label>
+            <select id="user_sex" name="user_sex" required>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+            </select>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+    <div class="footer">Футер</div>
+</body>
+</html>
